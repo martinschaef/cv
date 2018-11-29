@@ -1,0 +1,134 @@
+\documentclass[margin,line]{res}
+\usepackage{fontspec}
+% \setmainfont{Source Serif Pro}
+\usepackage{hyperref}
+
+
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+
+\name{Dr. Martin Sch\"af \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact\\ Information}
+
+\begin{tabular}{@{}p{3in}p{4in}}
+Amazon Web Services  & \\% 10 Coleman Place, Apt 7\\
+7 West 45 Street &\\
+New York, NY 10165 & \\
+10036 & \\
+%\emph{phone:}  +1 (650) 859-5957 & \\% +1 (650) 504-3879\\
+\emph{email:}  \texttt{martinschaef@gmail.com} & \\
+\emph{web:} \url{http://www.martinschaef.de} & \\
+\end{tabular}
+
+
+
+%\input{researchstatement}
+%\newpage
+
+\section{\sc Professional Employment}
+
+\textbf{Amazon Web Services}, New Yrok, NY, USA.\\
+ Software Engineer. Since March 2017
+
+\textbf{SRI International}, Menlo Park, CA, USA.\\
+ Senior Computer Scientist. October 2016 to February 2017. \\
+ Computer Scientist. January 2014 to September 2016. \\
+ International fellow. March 2013 to September 2013.
+
+\textbf{Laxino Ltd.}, Macau, China.\\
+Consultant from December 2012 to September 2015.
+
+\textbf{CEA List}, Paris, France.\\
+Visiting researcher from November 2013 to December 2013.
+
+\textbf{United Nations University}, Macau, China.\\
+Post-doctoral research fellow from July 2010 to October 2013.
+
+\textbf{Microsoft Research}, Redmond, WA.\\
+Consulting researcher from June 2009 to July 2009.
+
+\textbf{Albert-Ludwigs Universit\"at}, Freiburg i. Br., Germany.\\
+PhD student from April 2006 to June 2010.
+
+\bigskip
+\section{\sc Education}
+
+\begin{tabular}{@{}ll@{}}
+2006--2011 & {\bf University of Freiburg}, Freiburg, Germany\\
+& Ph.D. in Computer Science\\
+& Thesis: Static Detection of Inevitable Errors\\
+& Adviser: Prof. Andreas Podelski \\
+\\
+2002--2006 & {\bf Saarland University}, Saarbr\" ucken, Germany\\
+& M.Sc. Honor's Degree in Computer Science, April 2006\\
+& Thesis: Transition relations as a means of proving program properties\\
+& Adviser: Prof. Andreas Podelski
+\end{tabular}
+
+\newpage
+\input{publications}
+\bigskip
+\input{grants}
+\bigskip
+\input{projects}
+\bigskip
+\newpage
+\input{teaching}
+\bigskip
+\input{mentoring}
+\bigskip
+%\input{invited}
+
+\input{service}
+
+\iffalse
+\section{\sc References}
+\begin{tabular}{@{}p{2.5in}p{2.5in}}
+  {\bf Andreas Podelski} & {\bf Thomas Wies}\\
+  University of Freiburg & New York University\\
+  Georges-K\"ohler Allee 52 & 251 Mercer Street\\
+  79110 Freiburg, Germany & New York, NY 10012, USA\\
+  podelski@informatik.uni-freiburg.de & wies@cs.nyu.edu\\
+  \\
+  {\bf Philipp R\"ummer}  & {\bf Zhiming Liu}\\
+  Uppsala Universit  & Int'l. Institute for Software \& Technology\\
+  Department of Information Technology & United Nations University \\
+  SE-751 05 Uppsala, Sweden  & P.O. Box 3058, Macau, China\\
+  philipp.ruemmer@it.uu.se   & lzm@iist.unu.edu \\
+  \\
+  {\bf Natarajan Shankar} \\
+  MS EL256, \\
+  333 Ravenswood Avenue \\
+  Menlo Park, CA, 94025-3493, USA \\ 
+  shankar@csl.sri.com
+\end{tabular}
+\fi
+
+\end{resume}
+\end{document}
+
+
+
+

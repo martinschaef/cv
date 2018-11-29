@@ -1,0 +1,55 @@
+\section{\sc Research Statement}
+
+
+My research comprises different aspects of software quality. In the past years
+my research has been focused in the areas of \emph{static error detection},
+\emph{fault localization}, and \emph{system testing}:
+
+\noindent\emph{Static Error Detection.} Driven by the wish for verified
+software, static program analysis has been an active field of research over the
+past decades. Despite major achievements, usability remains an open problem.
+Existing analysis tools either require a tremendous amount of user interaction
+and special training, making them only applicable to extremely safety-critical
+software (e.g., the Microsoft Static Driver Verifier), or they produce a
+prohibitively large number of false alarms.
+
+
+Over the past few years, I have developed a static analysis tool called Joogie
+(\url{www.joogie.org}). Joogie identifies common coding mistakes such as
+unreachable code, use of non-allocated memory, or contradicting or useless 
+control-flow. To this end, Joogie tries, for each statement in a program, to
+compute a proof that no execution passing this statement can terminate
+un-exceptionally.
+
+Such a proof can be computed locally as it holds for \emph{any} execution of
+a statement, and thus still holds in a larger context. Hence, the analysis
+can be applied in an extremely modular way, and runs with a close-to-zero false
+alarms.
+
+Joogie is still in active development and has already been applied to
+real-world applications. It is able to find bugs and unreachable code that has been
+previously undetected.
+
+\noindent\emph{Fault Localization.} Once an error is found, chasing down the
+statements that need to be changed to eliminate the error is a daunting task. I
+have developed a novel approach  which, for a given error trace, computes
+invariant properties that hold along parts of the trace. It provides a guarantee
+that any statement for which this invariant property holds does not need to be
+considered to fix the observed error. This allows a compact representation of
+the error trace with additional information provided by the invariant
+properties. The approach is promising, and recent experiments indicate a
+significant speed up during debugging. An integration in Joogie is in the making.
+
+\noindent\emph{Grey-box GUI testing.} While our research shows that static
+analysis is suitable for code snippets, it fails to analyze large systems due
+to the complexity of the analysis. Reactive systems such as systems with graphical
+user interfaces are an interesting challenge here, due to their possibly infinite
+number of user interactions.   
+
+I am participating in the development of GUI testing techniques that
+utilize information obtained from light weight static analysis to generate
+\emph{suitable} interaction sequences and test data. The combination of
+light-weight analysis and system level testing has proved useful for larger
+application, where static analysis alone cannot cope with the complexity, and
+black-box testing fails due to the extreme number of test cases.
+

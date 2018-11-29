@@ -1,0 +1,59 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\usepackage[ansinew]{inputenc}
+
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+
+\name{Dr. Martin Sch\"af \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\iffalse
+United Nations University, IIST \\               
+Est. do Engenheiro Trigo No. 4 \\
+P.O. Box 3058, Macao, China \\
+\emph{phone:}  +854 6618 4407 \\
+\emph{email:}  \texttt{martinschaef@gmail.com}\\
+\emph{web:} \url{http://www.martinschaef.de}
+\fi
+
+\begin{tabular}{@{}p{3in}p{4in}}
+United Nations University, IIST  & 10 Coleman Place, Apt 7\\               
+Est. do Engenheiro Trigo No. 4  & Menlo Park, CA\\
+P.O. Box 3058, Macao, China  & 94025, USA\\
+\emph{phone:}  +854 6618 4407 & +1 (650) 504-3879\\
+\emph{email:}  \texttt{martinschaef@gmail.com} & \\
+\emph{web:} \url{http://www.martinschaef.de} & \\
+\end{tabular}
+
+
+\input{publications}
+
+
+\end{resume}
+\end{document}
+
+
+
+
