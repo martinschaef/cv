@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with:
-          root_file: document.tex
+          root_file: cv_schaef.tex
           args: "-xelatex -file-line-error -interaction=nonstopmode"
       - uses: meeDamian/github-release@2.0
         env:
@@ -21,5 +21,6 @@ jobs:
           body: >
             Auto release by github actions 
           allow_override: true
+          gzip: false
           files: >
-            document.pdf
+            cv_schaef.pdf
