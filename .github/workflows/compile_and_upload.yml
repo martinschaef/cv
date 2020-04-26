@@ -1,0 +1,21 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: document.tex
+          args: "-xelatex -file-line-error -interaction=nonstopmode"
+      - name: Upload to relase
+        uses: actions/upload-release-asset
+        id: upload-release-asset 
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./document.pdf
+          asset_name: cv-schaef.pdf
+          asset_content_type: application/pdf
