@@ -23,6 +23,8 @@ jobs:
           prerelease: false
       - name: Upload to relase
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
         id: upload-release-asset 
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
